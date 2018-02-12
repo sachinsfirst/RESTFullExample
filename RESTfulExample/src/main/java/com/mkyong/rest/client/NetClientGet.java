@@ -15,7 +15,7 @@ public class NetClientGet {
 		try {
 
 			URL url = new URL(
-					"http://localhost:8080/RESTfulExample/json/product/get");
+					"http://localhost:8080/RESTfulExample/registry/visitors/list");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");
 			conn.setRequestProperty("Accept", "application/json");
@@ -33,7 +33,7 @@ public class NetClientGet {
 
 				System.out.println(output);
 			}
-			
+
 			conn.disconnect();
 
 		} catch (MalformedURLException e) {
@@ -42,7 +42,7 @@ public class NetClientGet {
 		} catch (IOException e) {
 
 			e.printStackTrace();
-			
+
 		}
 
 	}

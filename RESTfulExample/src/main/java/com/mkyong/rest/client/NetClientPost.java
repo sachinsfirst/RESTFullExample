@@ -10,7 +10,6 @@ import java.net.URL;
 
 public class NetClientPost {
 
-	// http://localhost:8080/RESTfulExample/json/product/post
 	public static void main(String[] args) {
 
 		try {
