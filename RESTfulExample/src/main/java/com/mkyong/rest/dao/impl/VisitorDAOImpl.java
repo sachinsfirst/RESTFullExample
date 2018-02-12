@@ -14,6 +14,9 @@ import com.mkyong.rest.dao.VisitorDAO;
 
 public class VisitorDAOImpl implements VisitorDAO {
 
+	/* (non-Javadoc)
+	 * @see com.mkyong.rest.dao.VisitorDAO#getVisitorById(int)
+	 */
 	@Override
 	public Visitor getVisitorById(int id) throws SQLException {
 		Connection conn = null;
@@ -59,6 +62,9 @@ public class VisitorDAOImpl implements VisitorDAO {
 		return visitor;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.mkyong.rest.dao.VisitorDAO#getVisitorList()
+	 */
 	@Override
 	public List<Visitor> getVisitorList() throws SQLException {
 		Connection conn = null;

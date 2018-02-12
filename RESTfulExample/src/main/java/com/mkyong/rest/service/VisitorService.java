@@ -18,6 +18,10 @@ public class VisitorService {
 		return visitors;
 	}
 
+	/**
+	 * @param id
+	 * @return
+	 */
 	public Visitor getVisitorById(int id) {
 		Visitor visitor = null;
 		try {
@@ -28,6 +32,9 @@ public class VisitorService {
 		return visitor;
 	}
 
+	/**
+	 * @param visitor
+	 */
 	public void addVisitor(Visitor visitor) {
 		try {
 			new VisitorDAOImpl().addVisitor(visitor);
@@ -36,6 +43,10 @@ public class VisitorService {
 		}
 	}
 
+	/**
+	 * @param id
+	 * @return
+	 */
 	public Visitor deleteVisitorById(int id) {
 		Visitor visitor = null;
 		try {
